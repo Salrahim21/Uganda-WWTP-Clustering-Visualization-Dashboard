@@ -1,0 +1,26 @@
+Lon,Lat,Subregion,treatment_type,treatment_fraction,Capacity,removalfraction_sewer,removalfraction_onsite
+33.48834,0.614819,Buikwe,primary,NA,800,NA,NA
+33.470204,0.615676,Buvuma,secondary,NA,400,NA,NA
+31.346599,1.440845,Jinja,not treated,NA,0.7923,NA,NA
+33.219319,0.42479,Jinja,tertiary,NA,12000,NA,NA
+30.002699,-1.257092,Buikwe,pond,NA,1300,NA,NA
+30.272679,0.654739,Buvuma,primary,NA,55,NA,NA
+32.607589,0.31848805,Jinja,not treated,NA,33000,NA,NA
+32.5443269,0.3465463,Buikwe,secondary,NA,5400,NA,NA
+32.309155,2.778279,Mayuge,primary,NA,1,NA,NA
+34.182704,0.703629,Jinja,secondary,NA,1,NA,NA
+33.62164,1.704514,Jinja,primary,NA,1,NA,NA
+31.742977,-0.346633,Buvuma,pond,NA,1,NA,NA
+31.755505,-0.319403,Buikwe,not treated,NA,1,NA,NA
+32.455391,0.053521,Mayuge,secondary,NA,550,NA,NA
+32.472929,0.069615,Jinja,tertiary,NA,790,NA,NA
+32.895415,2.246428,Mayuge,secondary,NA,900,NA,NA
+30.66955,-0.598582,Buikwe,primary,NA,1,NA,NA
+30.674568,-0.609079,Buvuma,pond,NA,1,NA,NA
+30.66027,-0.619956,Mayuge,not treated,NA,1,NA,NA
+30.261926,-0.879107,Jinja,secondary,NA,1,NA,NA
+29.690258,-1.277358,Mayuge,primary,NA,1,NA,NA
+34.149872,1.073843,Buvuma,not treated,NA,1,NA,NA
+34.161191,1.08693,Mayuge,pond,NA,1,NA,NA
+31.727901,1.675972,Jinja,tertiary,NA,1,NA,NA
+32.102877,0.063237,Buikwe,pond,NA,1,NA,NA
