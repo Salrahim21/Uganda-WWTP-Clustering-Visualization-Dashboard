@@ -17,7 +17,7 @@ df_cluster = wwtp[['treatment_type', 'Subregion', 'Capacity', 'Lat', 'Lon']].dro
 df = df_cluster.copy()
 df["AdjustedCapacity"] = np.clip(df["Capacity"], a_min=5, a_max=None)
 
-kmeans = KMeans(n_clusters=3)
+kmeans = KMeans(n_clusters=3, random_state=42)
 df["cluster"] = kmeans.fit_predict(df[["Lat", "Lon"]])
 
 # Unique filter options
@@ -26,11 +26,12 @@ treatment_types = sorted(df["treatment_type"].dropna().unique())
 
 # Initialize Dash app
 app = dash.Dash(__name__)
+
 app.title = "WWTP Clusters in Uganda"
 
 # App layout
 app.layout = html.Div([
-    html.H1("WWTP Clusters in Uganda", style={'textAlign': 'center', 'color': '#ffffff'}),
+    html.H1("💧 WWTP Clusters in Uganda", style={'textAlign': 'center', 'color': '#ffffff'}),
 
     html.Div([
         html.Label("Filter by Cluster:", style={"color": "white"}),
@@ -57,12 +58,12 @@ app.layout = html.Div([
     ], style={"width": "100%", "display": "inline-block"}),
 
     html.Div([
-        html.H3("Total Capacity by Treatment Type", style={"color": "white"}),
+        html.H3("📊 Total Capacity by Treatment Type", style={"color": "white"}),
         dcc.Graph(id='bar-chart')
     ], style={"padding": "20px"}),
 
     html.Div([
-        html.H3("Correlation Heatmap", style={"color": "white"}),
+        html.H3("📈 Correlation Heatmap", style={"color": "white"}),
         html.Img(id='heatmap-img')
     ], style={"padding": "20px", "textAlign": "center"}),
 
@@ -134,3 +135,5 @@ def update_visuals(selected_clusters, selected_treatments):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
